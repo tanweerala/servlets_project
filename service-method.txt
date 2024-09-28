@@ -1,0 +1,29 @@
+public void service(HttpServletRequest req,HttpServletResponse res)
+===================================================================
+It is method of HttpServlet class
+It means HttpServlet class has two service method
+We will have to override one of them(either original or duplicate)
+It is better to override duplicate service method
+
+
+HttpServletRequest interface
+============================
+An object of this interface is created by web server and web server passes reference of this object to the service() method
+In this object web server stores form's data
+This object is called request object
+Servlet can get data these data(form's data) from tyhe request object
+
+HttpServletResponse interface
+=============================
+An object of this interface is created by web server and web server passes reference of this object to the service() method
+Servlet can use this object to send reponse(dynamic content) to the browser
+This object is called response object
+
+PrintWriter class
+=================
+Web server creates this object and stores reference of this object into response object
+Our servlet will call method of this class to send tresponse(html code+dynamic data) to the web brwoser.This object is known as out object
+
+
+
+

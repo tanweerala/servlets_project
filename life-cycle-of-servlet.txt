@@ -1,0 +1,48 @@
+Life cycle of servlet
+=====================
+Life cycle of servlet is managed by web server
+Life cycle of servlet has following 5 phases
+1)Loading servlet class
+2)Instantiating servlet class
+3)Initializing servlet 
+4)Invoking service method
+5)Destroying servlet
+
+Loading servlet class
+======================
+When web server accepts request for the servlet first time then web server loads class of the servlet in memory.It is done only once in the life cycle of servlet
+
+Instantiating servlet class
+===========================
+After loading class of the servlet, web server creates an ojbect of that class.It is done only once in the life cycle of servlet
+
+Initializing servlet 
+====================
+After creating object, web server initialized that object by invoking init() method
+This method(init) is called only once during the life cycle of servlet
+
+Invoking service method
+========================
+After initializing object, web server calls/invoked service methid.In this metrhod web server passes request and response object as parameter
+Web server calls this method each time web server accepts request for this servlet
+Write dynamic web page code inside this method
+
+Destroying servlet
+==================
+When web server is stopped or web application is undeployed from the web server then web server destroys this servlet by invoking destroy() method
+It is done only once in the life cycle of servlet
+
+
+inti(),service() and destroy() are life cycle methods of servlet
+
+
+
+
+
+
+
+
+
+
+
+

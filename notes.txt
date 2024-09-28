@@ -1,0 +1,54 @@
+Server side programming
+=======================
+This programming should be done to make pages dynamic
+We can use following two java technologies for server side programming
+1)Servlets
+2)JSP
+
+Servlets
+========
+This technology is one of the most popular web application develoment technology
+We will build server side programs using this technology
+These server side programs are known as servlets
+Class of these servlet must implement javax.servlet.Servlet interface either directly or indirectly
+
+Servlet interface
+=================
+It has following 5 methods
+1)public void init(ServletConfig config)
+2)public void service(ServletRequest req,ServletResponse res)
+3)public void destroy()
+4)public String getServletInfo()
+5)public ServletConfig getServletConfig()
+
+javax.servlet.GenericServlet class
+==================================
+It is implementation of Servlet interface.It has overridden four methods of Servlet interface
+service() method is not overrridden in this class
+So we can define/create servlet by inheriting GenericServlet class 
+
+javax.servlet.http.HttpServlet class
+====================================
+It is a child of GenericServlet class
+So we can define/create servlet by inheriting HttpServlet class 
+It is most widely used way to create servlet
+
+Above classes and interfaces are defined by web server vendors not java vendors
+It means jar file of these classes and interfaces must be added into project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
